@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Text Movement</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 730px;
+            width: 1533px;
+            background-color: rgb(5,105,98);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(98,206,248);
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 200px;
+            width: 400px;
+            transition: all 0.5s linear 1s;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 5em;
+            font-weight: bolder;
+        }
+        .box:hover>.box1{
+            transform: translateX(-125px);
+        }
+        .box:hover>.box2{
+            transform: translateY(120px);
+        }
+        .box:hover>.box3{
+            transform: translateY(-120px);
+        }
+        .box:hover>.box4{
+            transform: translateX(115px);
+        }
+        span{
+            margin-left: 30px;
+        }
+        .box1{
+            transition: all 0.5s linear 1s;
+        }
+        .box2{
+            transition: all 0.5s linear 1s;
+        }
+        .box3{
+            transition: all 0.5s linear 1s;
+        }
+        .box4{
+            transition: all 0.5s linear 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <span class="box1">H</span>
+            <span class="box2">T</span>
+            <span class="box3">M</span>
+            <span class="box4">L</span>
+        </div>
+    </div>
+</body>
+</html>
